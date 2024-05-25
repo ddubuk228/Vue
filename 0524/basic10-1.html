@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <img v-bind:[image1.scrattr]="image1.src"
+        :[image1.titleattr]="image1.title"/>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script>
+        let vm = Vue.createApp({
+            name: "App",
+            data() {
+                return {
+                    image1:{
+                        scrattr: "src",
+                        src: "https://previews.123rf.com/images/aratehortua/aratehortua1904/aratehortua190400476/123613752-%EB%B2%A1%ED%84%B0-%EB%A7%8C%ED%99%94-%EA%B7%80%EC%97%AC%EC%9A%B4-%EC%BA%90%EB%A6%AD%ED%84%B0-%ED%9D%B0%EC%83%89-%EB%B0%B0%EA%B2%BD%EC%97%90-%EA%B3%A0%EB%A6%BD.jpg",
+                        titleattr: "title",
+                        title: "공룡"
+                    }
+                };
+            },
+        }).mount("#app")
+    </script>
+</body>
+</html>

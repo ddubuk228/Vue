@@ -21,6 +21,8 @@
 <body>
     <div id="app">
         <div id="outer" @click="outerClick">
+            <!-- <div id="outer" @click.stop="outerClick"> -->
+                <!-- <div id="inner" @click.stop="innerClick"> -->
             <div id="inner" @click="innerClick"></div>
         </div>
     </div>
